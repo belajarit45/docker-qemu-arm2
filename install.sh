@@ -15,5 +15,3 @@ expect -f installqemu.expect
 
 echo "to start your new vm:"
 echo "  cd \$INSTALLATION_DIR && ./startqemu.sh"
-
-expect -f startnew.expect
