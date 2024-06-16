@@ -194,13 +194,12 @@ expect "#"
 send "poweroff\r"
 
 expect "$"
-send "\r"
+send "clear\r"
 
 expect "$"
 send "cd alpine && ./startqemu.sh\r"
 
-# Wait enough (forever) until a long-time boot
-set timeout -1
+set qemuID $spawn_id
 
 expect "login:"
 send "root\r"
